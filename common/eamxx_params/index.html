@@ -16,15 +16,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.5">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
       
-        <title>Runtime parameters - The C++ E3SM Atmosphere Model (EAMxx)</title>
+        <title>Runtime parameters - EAMxx</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.10ba22f1.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="The C++ E3SM Atmosphere Model (EAMxx)" class="md-header__button md-logo" aria-label="The C++ E3SM Atmosphere Model (EAMxx)" data-md-component="logo">
+    <a href="../.." title="EAMxx" class="md-header__button md-logo" aria-label="EAMxx" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +102,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            The C++ E3SM Atmosphere Model (EAMxx)
+            EAMxx
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -221,13 +221,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="The C++ E3SM Atmosphere Model (EAMxx)" class="md-nav__button md-logo" aria-label="The C++ E3SM Atmosphere Model (EAMxx)" data-md-component="logo">
+    <a href="../.." title="EAMxx" class="md-nav__button md-logo" aria-label="EAMxx" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    The C++ E3SM Atmosphere Model (EAMxx)
+    EAMxx
   </label>
   
     <div class="md-nav__source">
@@ -275,14 +275,14 @@
     
     
     
-    
-    
       
+        
+        
       
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
@@ -458,14 +458,14 @@
     
     
     
-    
-    
       
+        
+        
       
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
@@ -603,11 +603,11 @@
     
     
     
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
@@ -753,11 +753,11 @@
     
     
     
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
@@ -868,14 +868,14 @@
     
     
     
-    
-    
       
+        
+        
       
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
@@ -1165,7 +1165,7 @@
 </ul>
 </li>
 <li>p3::p3_mu_r_constant:  <ul>
-<li>description: P3 mu_r_constant (rain “shape parameter” in gamma drop-size distribution)  </li>
+<li>description: P3 mu_r_constant (rain shape parameter in gamma drop-size distribution)  </li>
 <li>type: real  </li>
 </ul>
 </li>
@@ -1394,7 +1394,7 @@
 </ul>
 <h2 id="nudging">nudging</h2>
 <ul>
-<li>nudging::nudging_filename:  <ul>
+<li>nudging::nudging_filenames_patterns:  <ul>
 <li>description: <strong>MISSING</strong>  </li>
 <li>type: array(string)  </li>
 </ul>
@@ -1419,6 +1419,11 @@
 <li>type: string  </li>
 </ul>
 </li>
+<li>nudging::skip_vert_interpolation:  <ul>
+<li>description: Flag for skipping vertical interpolation  </li>
+<li>type: logical  </li>
+</ul>
+</li>
 <li>nudging::source_pressure_type:  <ul>
 <li>description: Flag for how source pressure levels are handled in the nudging dataset.     TIME_DEPENDENT_3D_PROFILE: The dataset contains a time-varying pressure profile, variable name 'p_mid' with dimensions (time,ncol,nlev).     STATIC_1D_VERTICAL_PROFILE: The dataset uses a fixed in time single pressure profile, variable name 'p_lev' with dimension (nlev).  </li>
 <li>type: string  </li>
@@ -1426,7 +1431,7 @@
 </ul>
 </li>
 <li>nudging::source_pressure_file:  <ul>
-<li>description: If STATIC_1D_VERTICAL_PROFILE, this is an optional arg to point to a file with the source pressure levels defined.       Default is to look for p_levs in the first nudging_filename file  </li>
+<li>description: If STATIC_1D_VERTICAL_PROFILE, this is an optional arg to point to a file with the source pressure levels defined.     Default is to look for p_levs in the first nudging_filenames_patterns file  </li>
 <li>type: string  </li>
 </ul>
 </li>
@@ -1730,6 +1735,11 @@
 <li>type: logical  </li>
 </ul>
 </li>
+<li>rrtmgp::do_subcol_sampling:  <ul>
+<li>description: Flag to turn on/off subcolumn sampling of optical properties; if false treat cells as either completely clear or cloudy  </li>
+<li>type: logical  </li>
+</ul>
+</li>
 <li>rrtmgp::number_of_subcycles:  <ul>
 <li>description: how many times to subcycle this atm process  </li>
 <li>type: <strong>MISSING</strong>  </li>
@@ -1816,7 +1826,7 @@
 <h2 id="cosp">cosp</h2>
 <ul>
 <li>cosp::cosp_subcolumns:  <ul>
-<li>description: <strong>MISSING</strong>  </li>
+<li>description: Number of subcolumns to use for COSP simulators; cosp_subcolumns=1 implies no subcolumn sampling  </li>
 <li>type: <strong>MISSING</strong>  </li>
 </ul>
 </li>
@@ -2107,6 +2117,31 @@
 <li>type: <strong>MISSING</strong>  </li>
 </ul>
 </li>
+<li>initial_conditions::perturbed_fields:  <ul>
+<li>description: IC fields (with level dimension) to apply a random perturbation to based on the parameters below.  </li>
+<li>type: array(string)  </li>
+</ul>
+</li>
+<li>initial_conditions::generate_perturbation_random_seed:  <ul>
+<li>description: Whether or not to generate a random seed for perturbation.  </li>
+<li>type: logical  </li>
+</ul>
+</li>
+<li>initial_conditions::perturbation_random_seed:  <ul>
+<li>description: Random seed used for perturbation. Will be overridded by generate_perturbation_random_seed=true.  </li>
+<li>type: integer  </li>
+</ul>
+</li>
+<li>initial_conditions::perturbation_limit:  <ul>
+<li>description: Defines a range [1-x, 1+x] which perturbation will be taken from.  </li>
+<li>type: real  </li>
+</ul>
+</li>
+<li>initial_conditions::perturbation_minimum_pressure:  <ul>
+<li>description: Minimum pressure (relative to a reference level pressure profile) for which perturbation will be applied.  </li>
+<li>type: real  </li>
+</ul>
+</li>
 </ul>
 <h1 id="atmosphere-driver-parameters">Atmosphere Driver Parameters</h1>
 <ul>
@@ -2117,6 +2152,12 @@
 </li>
 <li>driver_options::atm_log_level:  <ul>
 <li>description: Verbosity level for the atm logger  </li>
+<li>type: string  </li>
+<li>valid values: trace,debug,info,warn,error  </li>
+</ul>
+</li>
+<li>driver_options::atm_flush_level:  <ul>
+<li>description: Verbosity level that triggers automatic flush of the atm logger  </li>
 <li>type: string  </li>
 <li>valid values: trace,debug,info,warn,error  </li>
 </ul>
@@ -2149,6 +2190,11 @@
 <li>driver_options::property_check_data_fields:  <ul>
 <li>description: list of additional data fields to output in property checks (only for physics grid)  </li>
 <li>type: array(string)  </li>
+</ul>
+</li>
+<li>driver_options::enable_iop:  <ul>
+<li>description: Enable intensive observation period. Currently the only use case is DP-EAMxx  </li>
+<li>type: logical  </li>
 </ul>
 </li>
 </ul>
@@ -2265,6 +2311,16 @@
 <li>type: <strong>MISSING</strong>  </li>
 </ul>
 </li>
+<li>ctl_nl::se_lx:  <ul>
+<li>description: <strong>MISSING</strong>  </li>
+<li>type: <strong>MISSING</strong>  </li>
+</ul>
+</li>
+<li>ctl_nl::se_ly:  <ul>
+<li>description: <strong>MISSING</strong>  </li>
+<li>type: <strong>MISSING</strong>  </li>
+</ul>
+</li>
 <li>ctl_nl::se_nsplit:  <ul>
 <li>description: <strong>MISSING</strong>  </li>
 <li>type: <strong>MISSING</strong>  </li>
@@ -2282,7 +2338,7 @@
 </li>
 <li>ctl_nl::se_tstep:  <ul>
 <li>description: <strong>MISSING</strong>  </li>
-<li>type: <strong>MISSING</strong>  </li>
+<li>type: real  </li>
 </ul>
 </li>
 <li>ctl_nl::statefreq:  <ul>
@@ -2386,7 +2442,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indices", "navigation.instant", "navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c18c5fb9.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
