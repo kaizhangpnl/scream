@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
@@ -70,12 +70,25 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-c-e3sm-atmosphere-model-eamxx" class="md-skip">
+        <a href="#the-e3sm-atmosphere-model-in-c-eamxx" class="md-skip">
           Skip to content
         </a>
       
     </div>
     <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+EAMxx is not supported yet.
+<a href="https://docs.e3sm.org"> 
+  <strong>Pleaae visit docs.e3sm.org instead!</strong>
+</a>
+
+          </div>
+          
+        </aside>
       
     </div>
     
@@ -281,20 +294,15 @@
     
     
     
-      
-        
-        
-      
     
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -340,32 +348,11 @@
   
   
     <li class="md-nav__item">
-      <a href="common/installation/" class="md-nav__link">
+      <a href="user/eamxx_cases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Installation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="user/model_output/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Model output
+    EAMxx case basics
   </span>
   
 
@@ -403,11 +390,11 @@
   
   
     <li class="md-nav__item">
-      <a href="common/eamxx_params/" class="md-nav__link">
+      <a href="user/model_output/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Runtime parameters
+    Model output
   </span>
   
 
@@ -424,11 +411,32 @@
   
   
     <li class="md-nav__item">
-      <a href="user/coarse_nudging/" class="md-nav__link">
+      <a href="user/nudging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Coarse nudging
+    Nudging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user/clean_clear_sky/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra radiation calls
   </span>
   
 
@@ -454,20 +462,15 @@
     
     
     
-      
-        
-        
-      
     
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -598,8 +601,6 @@
   
     
     
-    
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -749,8 +750,6 @@
     
     
     
-      
-    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -864,20 +863,15 @@
     
     
     
-      
-        
-        
-      
     
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -902,11 +896,11 @@
   
   
     <li class="md-nav__item">
-      <a href="technical/aerocom_cldtop/" class="md-nav__link">
+      <a href="technical/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    AeroCOM cloud top
+    Overview
   </span>
   
 
@@ -923,11 +917,11 @@
   
   
     <li class="md-nav__item">
-      <a href="technical/clean_clear_sky/" class="md-nav__link">
+      <a href="technical/aerocom_cldtop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Extra radiation calls
+    AeroCom cloud top
   </span>
   
 
@@ -977,16 +971,17 @@
                   
 
 
-<h1 id="the-c-e3sm-atmosphere-model-eamxx">The C++ E3SM Atmosphere Model (EAMxx)</h1>
-<p>Some nice introductory text goes here! Maybe some figures, too. Who knows?!</p>
+<h1 id="the-e3sm-atmosphere-model-in-c-eamxx">The E3SM Atmosphere Model in C++ (EAMxx)</h1>
+<p>EAMxx 
+EAMxx is almost completely different in all ways from the atmosphere model used for E3SM versions 1-3. </p>
+<p>EAMxx was built from the ground up using C++ in order to embrace modern software practices and to allow "performance portability" across various supercomputers. The latter goal is achieved by using the Kokkos library. EAMxx is a "clean-start" model with almost no similarity to the E3SM atmosphere model used in versions 1-3.  Currently only the km-scale explicit-convection version called SCREAM (the Simple Cloud-Resolving E3SM Atmosphere Model) is available, but a low-resolution version is in the works.</p>
+<p>Like the documentation for other component models, EAMxx documentation is divided into:</p>
 <ul>
-<li>The <a href="user/">User Guide</a> explains how to run EAMxx, both in
-  its standalone configuration and within E3SM.</li>
-<li>The <a href="developer/">Developer Guide</a> contains all the information needed
-  to contribute to the development of EAMxx.</li>
-<li>The <a href="technical/">Technical Guide</a> contains all the technical
-  information about EAMxx.</li>
+<li>The <a href="user/">User Guide</a> - info about running EAMxx and all options for modifying a simulation</li>
+<li>The <a href="developer/">Developer Guide</a> - information needed to contribute to EAMxx development</li>
+<li>The <a href="technical/">Technical Guide</a> - equations and numerical methods used in EAMxx</li>
 </ul>
+<p>Put another way, all information about how to customize runs without changing code is included in the User Guide, general information about software design which is needed for intelligently modifying code goes in the Developer Guide, and details about the specific process implementations in the current model version are included in the Technical Guide. </p>
 
 
 
@@ -1039,10 +1034,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indices", "navigation.instant", "navigation.sections", "navigation.top"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indices", "navigation.instant", "navigation.top"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
