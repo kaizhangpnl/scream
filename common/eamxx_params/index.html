@@ -12,7 +12,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -446,6 +446,48 @@ EAMxx is not supported yet.
   
   <span class="md-ellipsis">
     COSP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user/rrm_eamxx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regionally Refined EAMxx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user/dp_eamxx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Doubly Periodic EAMxx
   </span>
   
 
@@ -1158,64 +1200,99 @@ EAMxx is not supported yet.
 <li>type: array(file)  </li>
 </ul>
 </li>
-<li>p3::p3_autoconversion_prefactor:  <ul>
-<li>description: P3 autoconversion_prefactor (scale factor in autoconversion)  </li>
+<li>p3::autoconversion_prefactor:  <ul>
+<li>description: Autoconversion linear prefactor  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_mu_r_constant:  <ul>
-<li>description: P3 mu_r_constant (rain shape parameter in gamma drop-size distribution)  </li>
+<li>p3::autoconversion_qc_exponent:  <ul>
+<li>description: Autoconversion qc exponent  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_spa_to_nc:  <ul>
-<li>description: P3 spa_to_nc (scaling factor for turning CCN into nc in SPA)  </li>
+<li>p3::autoconversion_nc_exponent:  <ul>
+<li>description: Autoconversion nc exponent  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_k_accretion:  <ul>
-<li>description: P3 k_accretion (scaling factor on accretion)  </li>
+<li>p3::autoconversion_radius:  <ul>
+<li>description: Autoconversion droplet radius in meter  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_eci:  <ul>
-<li>description: P3 eci (liquid/ice collision/collection coefficient)  </li>
+<li>p3::accretion_prefactor:  <ul>
+<li>description: Accretion linear prefactor  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_eri:  <ul>
-<li>description: P3 eri (ice/rain collision/collection coefficient)  </li>
+<li>p3::accretion_qc_exponent:  <ul>
+<li>description: Accretion qc exponent  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_rho_rime_min:  <ul>
-<li>description: P3 rho_rime_min (riming density maximum)  </li>
+<li>p3::accretion_qr_exponent:  <ul>
+<li>description: Accretion qr exponent  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_rho_rime_max:  <ul>
-<li>description: P3 rho_rime_max (riming density minimum)  </li>
+<li>p3::rain_selfcollection_prefactor:  <ul>
+<li>description: Rain self-collection prefactor  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_a_imm:  <ul>
-<li>description: P3 a_imm (drop freezing exponent )  </li>
+<li>p3::rain_selfcollection_breakup_diameter:  <ul>
+<li>description: Rain self-collection breakup diameter in meter  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_dep_nucleation_exponent:  <ul>
-<li>description: P3 dep_nucleation_exponent (deposition nucleation)  </li>
+<li>p3::constant_mu_rain:  <ul>
+<li>description: Constant shape parameter (mu) in the rain droplet distribution  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_ice_sed_knob:  <ul>
-<li>description: P3 ice_sed_knob (ice fall speed)  </li>
+<li>p3::spa_ccn_to_nc_factor:  <ul>
+<li>description: Scaling factor for turning SPA ccn into P3 nc  </li>
 <li>type: real  </li>
 </ul>
 </li>
-<li>p3::p3_d_breakup_cutoff:  <ul>
-<li>description: P3 d_breakup_cutoff (rain self collection and breakup)  </li>
+<li>p3::cldliq_to_ice_collection_factor:  <ul>
+<li>description: Cloud liquid to ice collection scaling factor  </li>
 <li>type: real  </li>
+</ul>
+</li>
+<li>p3::rain_to_ice_collection_factor:  <ul>
+<li>description: Rain to ice collection scaling factor  </li>
+<li>type: real  </li>
+</ul>
+</li>
+<li>p3::min_rime_rho:  <ul>
+<li>description: Minimum rime density in kg/m3  </li>
+<li>type: real  </li>
+</ul>
+</li>
+<li>p3::max_rime_rho:  <ul>
+<li>description: Maximum rime density in kg/m3  </li>
+<li>type: real  </li>
+</ul>
+</li>
+<li>p3::immersion_freezing_exponent:  <ul>
+<li>description: Immersion freezing exponent for both rain and cloud liquid  </li>
+<li>type: real  </li>
+</ul>
+</li>
+<li>p3::deposition_nucleation_exponent:  <ul>
+<li>description: Deposition nucleation exponent factor  </li>
+<li>type: real  </li>
+</ul>
+</li>
+<li>p3::ice_sedimentation_factor:  <ul>
+<li>description: Ice sedimentation fall speed factor  </li>
+<li>type: real  </li>
+</ul>
+</li>
+<li>p3::do_ice_production:  <ul>
+<li>description: Flag to turn on ice production processes (loss processes unaffected)  </li>
+<li>type: logical  </li>
 </ul>
 </li>
 <li>p3::number_of_subcycles:  <ul>
@@ -1408,6 +1485,16 @@ EAMxx is not supported yet.
 </ul>
 <h2 id="mam4_drydep">mam4_drydep</h2>
 <ul>
+<li>mam4_drydep::fractional_land_use_file:  <ul>
+<li>description: File containing Fractional land use data for drydep  </li>
+<li>type: file  </li>
+</ul>
+</li>
+<li>mam4_drydep::drydep_remap_file:  <ul>
+<li>description: File containing mapping data from the grid of frac land use files to the model grid. Unused if the grid is the same.  </li>
+<li>type: file  </li>
+</ul>
+</li>
 <li>mam4_drydep::number_of_subcycles:  <ul>
 <li>description: how many times to subcycle this atm process  </li>
 <li>type: <strong>MISSING</strong>  </li>
@@ -2031,17 +2118,17 @@ EAMxx is not supported yet.
 </li>
 <li>rrtmgp::orbital_eccentricity:  <ul>
 <li>description: <strong>MISSING</strong>  </li>
-<li>type: <strong>MISSING</strong>  </li>
+<li>type: real  </li>
 </ul>
 </li>
 <li>rrtmgp::orbital_obliquity:  <ul>
 <li>description: <strong>MISSING</strong>  </li>
-<li>type: <strong>MISSING</strong>  </li>
+<li>type: real  </li>
 </ul>
 </li>
 <li>rrtmgp::orbital_mvelp:  <ul>
 <li>description: <strong>MISSING</strong>  </li>
-<li>type: <strong>MISSING</strong>  </li>
+<li>type: real  </li>
 </ul>
 </li>
 <li>rrtmgp::rad_frequency:  <ul>
@@ -2307,11 +2394,6 @@ EAMxx is not supported yet.
 </ul>
 </li>
 <li>initial_conditions::phis:  <ul>
-<li>description: <strong>MISSING</strong>  </li>
-<li>type: <strong>MISSING</strong>  </li>
-</ul>
-</li>
-<li>initial_conditions::restart_casename:  <ul>
 <li>description: <strong>MISSING</strong>  </li>
 <li>type: <strong>MISSING</strong>  </li>
 </ul>
@@ -2719,11 +2801,6 @@ EAMxx is not supported yet.
 <li>type: array(string)  </li>
 </ul>
 </li>
-<li>Scorpio::model_restart::filename_prefix:  <ul>
-<li>description: <strong>MISSING</strong>  </li>
-<li>type: <strong>MISSING</strong>  </li>
-</ul>
-</li>
 <li>Scorpio::model_restart::iotype:  <ul>
 <li>description: <strong>MISSING</strong>  </li>
 <li>type: <strong>MISSING</strong>  </li>
@@ -2958,10 +3035,10 @@ EAMxx is not supported yet.
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indices", "navigation.instant", "navigation.top"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indices", "navigation.instant", "navigation.top"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
